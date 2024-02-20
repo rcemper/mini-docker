@@ -1,15 +1,16 @@
 version: '3.6'
 services:
   iris:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: final
-    restart: always
-    command: --check-caps false --ISCAgent false
-    ports:
-      - 1972
-      - 52773
-      - 53773
+    image: intersystemsdc/iris-community
+    restart: no
+    command: /iris-main
+      - -a /home/irisowner/dev/ascript.sh
+      - -b /home/irisowner/dev/bscript.sh
+      - --check-caps false
+      - --ISCAgent false
+
+    ports: 
+      - 41773:1972
+      - 42773:52773
     volumes:
       - ./:/home/irisowner/dev
