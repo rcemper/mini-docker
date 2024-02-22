@@ -6,7 +6,6 @@ services:
     command: /iris-main
       - -a /home/irisowner/dev/ascript.sh
       - -b /home/irisowner/dev/bscript.sh
-      - --check-caps false
       - --ISCAgent false
 
     ports: 
