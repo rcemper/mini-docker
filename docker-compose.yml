@@ -2,6 +2,7 @@ version: '3.6'
 services:
   iris:
     image: intersystemsdc/iris-community
+#    image: intersystemsdc/irishealth-community
     restart: no
     command: /iris-main
       - -a /home/irisowner/dev/ascript.sh
