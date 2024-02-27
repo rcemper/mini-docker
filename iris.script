@@ -1,5 +1,5 @@
     zn "%SYS"
-    // fix sixk package mapping in HSCUSTOM
+    // fix sick package mapping in HSCUSTOM
     for p="%IPM","%pkg.isc" do ##Class(Config.MapPackages).Delete("HSCUSTOM",p)
     
     // Unexpire passwords and set up passwordless mode to simplify dev use.
