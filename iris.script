@@ -13,7 +13,7 @@
     zn "USER"
     zpm "install MDX2JSON"
     zpm "install samples-bi"
-    do EnableDeepSee^%SYS.cspServer("/csp(user/")
+    do EnableDeepSee^%SYS.cspServer("/csp/user/")
     zpm "list"
  
     halt
