@@ -13,7 +13,7 @@ This template:
 ### Usage
 The container is built directly from **intersystemsdc/iris-community** without any Dockerfile
 - **bscript.sh** runs BEFORE IRIS is started  
-- **script.sh** is executed AFTER the start of IRIS and executes **iris.script** by default
+- **ascript.sh** is executed AFTER the start of IRIS and executes **iris.script** by default
 - changing of port mapping happens in **docker-compose.yml** 
 
 ### Prerequisites
