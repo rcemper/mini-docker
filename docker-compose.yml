@@ -4,6 +4,8 @@ services:
     image: intersystemsdc/iris-community
 #    image: intersystemsdc/irishealth-community
     restart: no
+    hostname: mini-docker
+    container_name: iris-mini-docker
     command: /iris-main
       - -a /home/irisowner/dev/ascript.sh
       - -b /home/irisowner/dev/bscript.sh
