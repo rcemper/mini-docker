@@ -6,7 +6,7 @@ This repository provides a generic development environment
 for coding productively with InterSystems ObjectScript.    
 This template:   
 * Runs InterSystems IRIS Community Edition in a docker container
-* besides ZPM it includes WEBTERMINAL and PASSWORDLESS package
+* besides ZPM it includes ITERM and PASSWORDLESS package
 * the namespace defaults to USER
 * any additional setting is provided by additional package related installation
  
@@ -32,9 +32,9 @@ To open IRIS Terminal do:
 $ docker-compose exec iris iris session iris
 USER>
 ```
-or using **WebTerminal**
+or using **iterm**
 ```
-http://localhost:42773/terminal/
+http://localhost:42773/iterm/
 ```
 To access IRIS System Management Portal
 ```
