@@ -1,3 +1,6 @@
+<img src="https://community.intersystems.com/sites/default/files/inline/images/archived.gif" width=100></img>
+<b>&nbsp;no maintenance or update</b>  
+
 # mini-docker
 The package creates a very basic IRIS instance in Docker    
 It's a proposal for an instance independent of IPM versions.
@@ -40,6 +43,4 @@ To access IRIS System Management Portal
 ```
 http://localhost:42773/csp/sys/UtilHome.csp
 ```
-### How to use it
-This presents OEX package [xxxxxxx]() using the actual IPM module    
-All user documentation is found there in the [original repo]()  
+#### could be used as a template
