@@ -1,9 +1,6 @@
-<img src="https://community.intersystems.com/sites/default/files/inline/images/archived.gif" width=100></img>
-<b>&nbsp;no maintenance or update</b>  
-
 # mini-docker
-The package creates a very basic IRIS instance in Docker    
-It's a proposal for an instance independent of IPM versions.
+The package creates a very basic template for IRIS in Docker    
+
 ## Description
 This repository provides a generic development environment 
 for coding productively with InterSystems ObjectScript.    
@@ -15,7 +12,6 @@ This template:
  
 ### Usage
 The container is built directly from **intersystemsdc/iris-community** without any Dockerfile
-- **bscript.sh** runs BEFORE IRIS is started  
 - **ascript.sh** is executed AFTER the start of IRIS and executes **iris.script** by default
 - changing of port mapping happens in **docker-compose.yml** 
 
@@ -37,10 +33,10 @@ USER>
 ```
 or using **iterm**
 ```
-http://localhost:42773/iterm/
+http://localhost:52773/iterm/
 ```
 To access IRIS System Management Portal
 ```
-http://localhost:42773/csp/sys/UtilHome.csp
+http://localhost:52773/csp/sys/UtilHome.csp
 ```
 #### could be used as a template
