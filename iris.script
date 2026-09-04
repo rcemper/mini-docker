@@ -1,25 +1,15 @@
-    zn "%SYS"
-    // fix sick package mapping in HSCUSTOM
-    for p="%IPM","%pkg.isc" do ##Class(Config.MapPackages).Delete("HSCUSTOM",p)
-    
-    // Unexpire passwords and set up passwordless mode to simplify dev use.
-    do ##class(Security.Users).UnExpireUserPasswords("*")
-    zpm "install passwordless"
-    zpm "install iterm"
+zn "%SYS"
+;; fix sick package mapping in some HSCUSTOM
+for p="%IPM","%pkg.isc" do ##Class(Config.MapPackages).Delete("HSCUSTOM",p)
 
-    zn "USER"
-    // Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
-    zpm "install vscode-per-namespace-settings"
-    ; zpm "install webterminal"
+;; Unexpire passwords and set up passwordless mode to simplify dev use.
+do ##class(Security.Users).UnExpireUserPasswords("*")
+zpm "install passwordless"
+zpm "install iterm"
 
-    // this should be the place for individual application code.
-
-    zn "USER"
-    zpm "install MDX2JSON"
-    zpm "install samples-bi"
-    do EnableDeepSee^%SYS.cspServer("/csp/user/")
-    zpm "list"
- 
-    halt
-
-
+zn "USER"
+;; this should be the place for individual application code.
+do EnableDeepSee^%SYS.cspServer("/csp/user/")
+zpm "list"
+write "iris.script completed",!,$ZV,!
+halt
